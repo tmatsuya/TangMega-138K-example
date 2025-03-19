@@ -1,5 +1,5 @@
 -type SERDES
--path C:/Users/Think/Downloads/pcie_gen3(8G)/src/serdes/
+-path C:/Users/tmats/Desktop/TangMega-138K-example/pcie_dma_demo/pcie_gen3(8G)/src/serdes/
 -file_type vlg
 -file_name serdes
 -mod_name SerDes_Top

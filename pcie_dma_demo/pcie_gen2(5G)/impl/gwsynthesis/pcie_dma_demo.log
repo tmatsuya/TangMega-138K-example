@@ -1,0 +1,38 @@
+GowinSynthesis start
+Reading property constraint file "C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie_dma_demo.gsc"
+Running parser ...
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\arb\arbiter_encryption.v'
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\gowin_pll\gowin_pll.v'
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\include\top_define.v'
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie\tlp_encryption.v'
+Analyzing included file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\include\top_define.v'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie\tlp_encryption.v":1726)
+Back to file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie\tlp_encryption.v'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie\tlp_encryption.v":1726)
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\serdes\pcie_controller\pcie_controller.v'
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\serdes\serdes.v'
+Analyzing Verilog file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v'
+Analyzing included file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\include\top_define.v'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":1)
+Back to file 'C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":1)
+WARN  (EX2830) : Data object 'rstn' is already declared("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":68)
+Previous declaration of 'rstn' is from here("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":66)
+WARN  (EX3671) : Second declaration of 'rstn' is ignored("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":68)
+WARN  (EX3073) : Port 'PCIE_Controller_Top_pcie_tl_drp_clk_o' remains unconnected for this instance("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":735)
+Compiling module 'top'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":3)
+Compiling module 'Gowin_PLL'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\gowin_pll\gowin_pll.v":10)
+Compiling module '**'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie\tlp_encryption.v":1726)
+Extracting RAM for identifier '**'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\pcie\tlp_encryption.v":1726)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'req_dma_rd_en'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":479)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 256 for port 'req_dma_rd_addr_l'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":480)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 256 for port 'req_dma_rd_addr_h'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":481)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 256 for port 'req_dma_rd_len'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":482)
+WARN  (EX3670) : Actual bit length 8 differs from formal bit length 64 for port 'req_dma_rd_tag'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":483)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'req_dma_rd_valid'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":484)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'req_dma_wr_en'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":486)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 256 for port 'req_dma_wr_addr_l'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":487)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 256 for port 'req_dma_wr_addr_h'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":488)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 256 for port 'req_dma_wr_len'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":489)
+WARN  (EX3670) : Actual bit length 8 differs from formal bit length 64 for port 'req_dma_wr_tag'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":490)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 8 for port 'req_dma_wr_valid'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\top.v":491)
+Compiling module 'SerDes_Top'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\serdes\serdes.v":10)
+ERROR (EX3937) : Instantiating unknown module '~upar_arbiter_wrap.SerDes_Top'("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\serdes\serdes.v":674)
+Module 'SerDes_Top' remains a black box due to errors in its contents("C:\Users\tmats\Desktop\TangMega-138K-example\pcie_dma_demo\pcie_gen2(5G)\src\serdes\serdes.v":10)
+GowinSynthesis finish
