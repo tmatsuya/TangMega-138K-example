@@ -45,13 +45,30 @@ module top(
     assign cfg_clk = div_clk;
     assign tlp_clk = div_clk;
 
+
+    // PCIE Reset
+    wire pcie_rstn2;
+    reg pcie_rstn_old = 1'b0;
+    reg [23:0]  pcie_reset_cnt = 24'd0;
+    always @ (posedge cfg_clk) begin
+        pcie_rstn_old <= pcie_rstn;
+        if ((pcie_rstn_old == 1'd1) && (pcie_rstn == 1'd0)) begin
+            pcie_reset_cnt <= 24'b1111_1111_1111_1111_1111_1111;
+        end else if (pcie_rstn == 1'd1) begin
+                pcie_reset_cnt <= 24'd0;
+        end else if (pcie_reset_cnt != 24'd0) begin
+                pcie_reset_cnt <= pcie_reset_cnt - 24'd1;
+        end
+    end
+    assign pcie_rstn2 = (pcie_reset_cnt == 24'd0);
+
     // Reset generate
     reg [26:0]  pcie_st_cnt = 0;
     reg [26:0]  run_cnt     = 0;
     reg [26:0]  perst_cnt   = 0;
     reg [SYS_RST_DLY:0] sys_rst_cnt = 0;
 
-    wire w_rst_n = rst_n & pcie_rstn;
+    wire w_rst_n = rst_n & pcie_rstn2;
     wire pcie_start;
     wire tlp_rst = !pcie_start;
 
@@ -65,7 +82,7 @@ module top(
 
     wire rstn = sys_rst_cnt[SYS_RST_DLY];
     
-    wire rstn = pcie_rstn;
+    wire rstn = pcie_rstn2;
 
     always @ (posedge cfg_clk or negedge rstn)
         if (!rstn)                      
